@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://todobackend-z4cy.onrender.com/";
 
 const AddTodo = async (text, setText, setTodo) => {
   const response = await axios.post(`${baseUrl}/api/todo/add`, { text });
